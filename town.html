@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Town</title>
+    <link rel="stylesheet" href="st1.css">
+</head>
+<body>
+    <audio id="bg-music" autoplay loop>
+    <source src="music/homesac.mp3" type="audio/mpeg"></audio>
+    <h1 class="town-title"></h1>
+
+<div class="map-container">
+    <div class="map-wrapper">
+        <a href="index.html" class="path path-middle">&nbsp<span class="label">HOME</span></a>
+        <img src="img/path.png" alt="Town Map" class="map">
+        
+       <button type="button" class="path path-left" onclick="opsop()">
+            <img src="img/tent2.png" class="tent">
+            <span class="label">SHOP</span>
+        </button>
+
+        <button class="path path-right" onclick="opmith()">
+            <img src="img/bs.png" class="smith">
+            <span class="label">BLACKSMITH</span>
+        </button>
+
+        <button class="path path-top" onclick="opild()">
+            <img src="img/guild.png" class="smith">
+            <span class="label">GUILD HALL</span>
+        </button>
+
+        <a href="#" class="path path-top"></a>
+    </div>
+</div>
+<!-- SHOP -->
+<div id="shopMenu" class="menu hidden">
+    <div class="shop-bg">
+        <span class="close-btn" onclick="closop()">X</span>
+<!--red-->
+        <img src="img/potion/remal1.png" class="item red-small" data-name="Small Health Potion" data-price="25" data-desc="a basic potion that can Heals 50 HP">
+        <img src="img/potion/rebig1.png" class="item red-big" data-name="Big health Potion" data-price="50" data-desc="an intermediate potion that Heals 100 HP">
+<!--yellow-->
+        <img src="img/potion/yemal1.png" class="item yellow-small" data-name="Small Endurance Potion" data-price="20" data-desc="a basic potion that reduce stamina consumtion by 10%">
+        <img src="img/potion/yebig1.png" class="item yellow-big" data-name="Big Endurance Potion" data-price="40" data-desc="an intermediate potion that reduce stamina consumtion by 20%">
+<!--blue-->
+        <img src="img/potion/blual1.png" class="item blue-small" data-name="Small Mana Potion" data-price="50" data-desc="a basic potion that can regen 100 Mana">
+        <img src="img/potion/bluig1.png" class="item blue-big" data-name="Small Mana Potion" data-price="100" data-desc="an intermediate potion that can regen 200 Mana">
+    </div>
+</div>
+
+<!-- BLACKSMITH -->
+<div id="smithMenu" class="menu hidden">
+    <div class="shop-bg smith-bg">
+        <span class="close-btn" onclick="clomith()">X</span>
+<!--warrior-->
+        <img src="img/weapon/irsor.png" class="item irsor"
+    data-price="120"
+    data-name="Iron Sword"
+    data-damage="10"
+    data-speed="1"
+    data-durability="200"
+    data-type="Physical">
+<!--ranger-->
+        <img src="img/weapon/bobow.png" class="item bobow"
+    data-price="150"
+    data-name="Bone Bow"
+    data-damage="15"
+    data-speed="0.5"
+    data-durability="50"
+    data-type="Physical">
+<!--Wizzard-->
+        <img src="img/weapon/crystaf.png" class="item crystaf"
+    data-price="300"
+    data-name="Crystal Staff"
+    data-damage="35"
+    data-speed="0.5"
+    data-durability="100"
+    data-type="Magic">
+    </div>
+</div>
+
+<!-- GUILD -->
+<div id="guildMenu" class="menu hidden">
+    <div class="shop-bg guild-bg">
+        <span class="close-btn" onclick="cloild()">X</span>
+    </div>
+</div>
+
+<!-- ITEM DETAIL -->
+<div id="itemDetail" class="menu hidden">
+    <div class="menu-content">
+        <span class="close-btn" onclick="closeItem()">X</span>
+
+        <img id="itemImg" class="detail-img">
+
+        <h2 id="itemName"></h2>
+        <p id="itemDesc"></p>
+        <p id="itemPrice"></p>
+
+        <button class="buy-btn" onclick="">BUY</button>
+    </div>
+</div>
+    <script src="scr.js"></script>
+</body>
+</html>
