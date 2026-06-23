@@ -10,7 +10,6 @@ body {
     align-items: center;
 }
 
-/* CONTAINER */
 .login-container {
     background: #e7a113;
     border: 4px solid #3a2c1a;
@@ -26,7 +25,6 @@ h1 {
     margin-bottom: 20px;
 }
 
-/* INPUTS */
 input {
     width: 90%;
     margin: 10px 0;
@@ -60,7 +58,6 @@ input {
     background: #0fa300;
 }
 
-/* REGISTER LINK */
 .register-link {
     margin-top: 15px;
     font-size: 8px;
@@ -71,7 +68,6 @@ input {
     text-decoration: underline;
 }
 
-/* BACK BUTTON */
 .back-btn {
     position: absolute;
     top: 20px;
